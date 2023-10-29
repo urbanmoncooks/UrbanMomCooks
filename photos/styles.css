@@ -1,0 +1,228 @@
+/* Reset some default styles to ensure cross-browser consistency */
+body, h1, h2, h3, p, ul, li, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Set up a responsive design */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A9A9A9;
+    color: #000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+nav.sticky-nav {
+    background-color: #FF9130;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header {
+    background-color: #FECDA6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 24px;
+    color: #FF5B22;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-section {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.image-container {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #FF5B22;
+    font-size: 24px;
+}
+
+.recipe {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe h3 {
+    font-size: 20px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.recipe p {
+    color: #444;
+    margin-top: 10px;
+}
+
+.recipe ul {
+    margin-top: 10px;
+}
+
+.recipe ul li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.recipe table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.recipe table th,
+.recipe table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+footer {
+    background-color: #FECDA6;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+}
+
+/* Highlight the current page in navigation */
+nav ul li.current-page a {
+    background-color: #FF5B22;
+    color: #FFFFFF;
+}
+
+/* Logo resizing */
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.meal-planning {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Existing styles for the site */
+.quick-meals {
+    height: 2px;
+    width: auto;
+}
+
+.category {
+    text-align: center;
+}
+
+.categ {
+    border-size: 0px;
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+}
+
+.category h3 {
+    color: #FF5B22;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Style the form for fields */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    width: 100px;
+    margin: 10px auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .site-title {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
