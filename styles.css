@@ -1,7 +1,7 @@
-/* Reset some default styles to ensure cross-browser consistency */
 body, h1, h2, h3, p, ul, li, table, th, td {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 /* Set up a responsive design */
@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 nav.sticky-nav {
     background-color: #FF9130;
     padding: 10px;
@@ -20,15 +21,12 @@ nav.sticky-nav {
     top: 0;
     z-index: 100;
 }
+
 header {
     background-color: #FECDA6;
-    height: 20vh;
     padding: 20px;
-    
-}
-
-.header-content {
     display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap to the next line on small screens */
     justify-content: space-between;
     align-items: center;
 }
@@ -39,17 +37,15 @@ header {
     margin-left: 10px;
 }
 
-
-
-
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center; /* Center navigation links on mobile */
+    flex-wrap: wrap; /* Allow navigation links to wrap on small screens */
 }
 
 nav ul li {
-    margin-left: 10px;
+    margin: 10px; /* Increased margin for better spacing on mobile */
 }
 
 nav ul li a {
@@ -64,6 +60,8 @@ nav ul li a:hover {
 }
 
 
+
+
 main {
     max-width: 960px;
     margin: 0 auto;
@@ -72,15 +70,17 @@ main {
     display: flex;
     flex-direction: column;
 }
-.background-section{
-max-width: 100%;
+
+.background-section {
+    max-width: 100%;
     margin: 0 auto;
-    
 }
-.image-container{
-margin:0 auto;
-max-width:100%;
-height: auto;}
+
+.image-container {
+    max-width: 100%;
+    height: auto;
+margin: 0 auto;
+}
 
 h2 {
     color: #FF5B22;
@@ -149,22 +149,26 @@ nav ul li.current-page a {
     max-width: 150px;
     height: auto;
 }
-.meal-planning{
-max-width:100%;
-height:auto;
+
+.meal-planning {
+    max-width: 100%;
+    height: auto;
 }
+
 /* Existing styles for the site */
-.quick-meals{
-height:2px;
-width:auto;}
+.quick-meals {
+    height: 2px;
+    width: auto;
+}
 
 .category {
-    
     text-align: center;
 }
-.categ{
-border-size:0px;
+
+.categ {
+    border-size: 0px;
 }
+
 .category img {
     max-width: 100%;
     height: auto;
@@ -181,8 +185,8 @@ border-size:0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 80%; 
-    margin: 0 auto; 
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .contact-form label {
@@ -203,15 +207,25 @@ border-size:0px;
     margin: 10px auto;
 }
 
-
-
-
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    main {
+    header {
         padding: 10px;
     }
+
     .site-title {
         font-size: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    main {
+        padding: 10px;
     }
 }
