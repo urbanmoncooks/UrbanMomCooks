@@ -206,7 +206,28 @@ nav ul li.current-page a {
     width: 100px;
     margin: 10px auto;
 }
+.custom-table {
+  width: 100%;
+  margin-top: 10px;
+}
 
+.custom-table th,
+.custom-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Normal table row style */
+.custom-table tr {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for table row */
+.custom-table tr:hover {
+  background-color: #FF9130; /* Change to the desired color on hover */
+  color: #FFFFFF; /* Change to the desired text color on hover */
+}
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     header {
