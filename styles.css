@@ -228,4 +228,8 @@ nav ul li.current-page a {
     main {
         padding: 10px;
     }
+   .cover{
+width:50%;
+height:auto;
+}
 }
