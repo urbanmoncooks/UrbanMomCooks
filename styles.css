@@ -229,7 +229,8 @@ nav ul li.current-page a {
         padding: 10px;
     }
    .cover{
-width:50%;
+width:80%;
 height:auto;
+margin:0 auto;
 }
 }
